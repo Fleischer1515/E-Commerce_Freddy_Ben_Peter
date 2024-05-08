@@ -1,22 +1,21 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { testheader } from './headers'; // Stelle sicher, dass der Pfad zur headers-Datei korrekt ist
 
 function App() {
+  const headerText = testheader(); // Aufruf der testheader-Methode
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        
+        
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {headerText}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+       Ben saugt an Gliedern
       </header>
     </div>
   );

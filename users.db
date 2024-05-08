@@ -1,0 +1,14 @@
+CREATE DATABASE IF NOT EXISTS logindata;
+
+USE logindata;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+USE logindata;
+
+INSERT INTO users (username, password) VALUES ('Ben', 'admin');
+INSERT INTO users (username, password) VALUES ('Freddy', 'admin');
+INSERT INTO users (username, password) VALUES ('Peter', 'admin');
